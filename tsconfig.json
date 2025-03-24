@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "ES2023"],
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2023"
+  },
+  // Only include HELIO TypeScript files and ignore cypress ts files for now.
+  // They will be included in the local cypress/tsconfig.json file.
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}
