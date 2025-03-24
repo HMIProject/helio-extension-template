@@ -1,4 +1,4 @@
-name: test
+name: build
 on:
   pull_request:
   push:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   run:
-    name: Run Unit Tests
+    name: Build Extension
     runs-on: ubuntu-latest-4core
 
     steps:
@@ -26,5 +26,12 @@ jobs:
       - name: Install node_modules
         run: yarn install --immutable
 
-      - name: Run Tests
-        run: yarn test run
+      - name: Run Build
+        run: yarn build
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: helio-extension
+          path: lib/*.js
+          retention-days: 5
