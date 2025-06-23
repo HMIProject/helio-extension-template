@@ -1183,6 +1183,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@storybook/react-dom-shim@npm:9.0.12":
+  version: 9.0.12
+  resolution: "@storybook/react-dom-shim@npm:9.0.12"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^9.0.12
+  checksum: 10c0/95b5dc7debeb10a2224141c7e8753606604b4a0ec77f0cd6668e2cb0c403e69e2a2c7ac0a73343dc917bb4ab266f5758f9908a001d14d462c00d1344749ed677
+  languageName: node
+  linkType: hard
+
 "@storybook/react-dom-shim@npm:9.0.4":
   version: 9.0.4
   resolution: "@storybook/react-dom-shim@npm:9.0.4"
@@ -1216,7 +1227,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/react@npm:9.0.4, @storybook/react@npm:^9.0.4":
+"@storybook/react@npm:9.0.4":
   version: 9.0.4
   resolution: "@storybook/react@npm:9.0.4"
   dependencies:
@@ -1231,6 +1242,24 @@ __metadata:
     typescript:
       optional: true
   checksum: 10c0/d1b7f3c2ccd9d8eeb7fd029a74a0011fb4ddaf7b46ea8d6bbd51a4dedecf9959aed5db44725169e134fb931a3c2d7edfc29d3c6e63a0d1f1535317609bed1a97
+  languageName: node
+  linkType: hard
+
+"@storybook/react@npm:^9.0.12":
+  version: 9.0.12
+  resolution: "@storybook/react@npm:9.0.12"
+  dependencies:
+    "@storybook/global": "npm:^5.0.0"
+    "@storybook/react-dom-shim": "npm:9.0.12"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
+    storybook: ^9.0.12
+    typescript: ">= 4.9.x"
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 10c0/fb8441757cb2f3fb99a27ebda1dede8a71f12f807610edfe90a669f4206c2ded468cbbb189322670ae36aa59d6fb6c2a913617a1ef8c7077cfe8cf317a89b095
   languageName: node
   linkType: hard
 
@@ -3324,7 +3353,7 @@ __metadata:
     "@rollup/plugin-commonjs": "npm:^28.0.3"
     "@rollup/plugin-node-resolve": "npm:^16.0.1"
     "@rollup/plugin-replace": "npm:^6.0.2"
-    "@storybook/react": "npm:^9.0.4"
+    "@storybook/react": "npm:^9.0.12"
     "@storybook/react-vite": "npm:^9.0.4"
     "@types/react": "npm:^19.1.6"
     "@types/react-dom": "npm:^19.1.6"
