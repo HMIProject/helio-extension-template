@@ -746,14 +746,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hmiproject/helio-sdk@npm:^0.0.17":
-  version: 0.0.17
-  resolution: "@hmiproject/helio-sdk@npm:0.0.17"
+"@hmiproject/helio-sdk@npm:^0.0.19":
+  version: 0.0.19
+  resolution: "@hmiproject/helio-sdk@npm:0.0.19"
   dependencies:
     "@emotion/css": "npm:^11.13.5"
     react: "npm:^19.0.0"
     zod: "npm:<3.21.0"
-  checksum: 10c0/9f5df607307ef43328464fa7c9450bac2edf43b21a448ec1c3eb2c2f0e12d0c67484b363cb3462feba0eb2791b1460b734f1e26b8bf714e83b9e7b71bc5ce60f
+  checksum: 10c0/f5a4e3aac0e32f4b47084402e5491db10cee7ef8248b5fc8a7b243abd95a71e56801973ece4894a04c5d56b39c88839e3afbd79d21671d85c0ab2da17b16d895
   languageName: node
   linkType: hard
 
@@ -3320,7 +3320,7 @@ __metadata:
   resolution: "helio-extension-template@workspace:."
   dependencies:
     "@eslint/js": "npm:^9.28.0"
-    "@hmiproject/helio-sdk": "npm:^0.0.17"
+    "@hmiproject/helio-sdk": "npm:^0.0.19"
     "@rollup/plugin-commonjs": "npm:^28.0.3"
     "@rollup/plugin-node-resolve": "npm:^16.0.1"
     "@rollup/plugin-replace": "npm:^6.0.2"
