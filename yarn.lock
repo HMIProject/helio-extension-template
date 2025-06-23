@@ -3349,7 +3349,7 @@ __metadata:
     rollup: "npm:4.41.1"
     rollup-plugin-external-globals: "npm:^0.13.0"
     rollup-plugin-typescript2: "npm:^0.36.0"
-    storybook: "npm:^9.0.4"
+    storybook: "npm:^9.0.12"
     typescript: "npm:^5.8.3"
     typescript-eslint: "npm:^8.33.1"
     vitest: "npm:^3.2.4"
@@ -5184,9 +5184,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"storybook@npm:^9.0.4":
-  version: 9.0.4
-  resolution: "storybook@npm:9.0.4"
+"storybook@npm:^9.0.12":
+  version: 9.0.12
+  resolution: "storybook@npm:9.0.12"
   dependencies:
     "@storybook/global": "npm:^5.0.0"
     "@testing-library/jest-dom": "npm:^6.6.3"
@@ -5206,7 +5206,7 @@ __metadata:
       optional: true
   bin:
     storybook: ./bin/index.cjs
-  checksum: 10c0/52aa44ac9ba73bf3ab2718669faa02c515ef91243f7d39bcac815efc1b72ac2f2c3b1ea4586ec37beb8f6044c8c5b1c9e2d46405a8832974f3cee37f4b3c3821
+  checksum: 10c0/6a849eaa9f8394ec0460a736cf781c63c1ab3acebaf1d464b92fc33ef986d53d3ad98e25146edad4410849b3d315e2a76c5f31c59d109a496d58b2896f712790
   languageName: node
   linkType: hard
 
