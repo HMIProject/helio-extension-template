@@ -16,34 +16,33 @@ These tools are informed by our current preference and are included to make the
 process of building a HELIO extension as smooth as possible. However, none of
 them are _required_. Feel free to replace them with your own preferred options.
 
-We have also pinned specific versions of [Node.js](https://nodejs.org/) and
-[Yarn](https://yarnpkg.com/) in the `package.json` file. This relies on the
-JavaScript Tool Manager [Volta](https://volta.sh/). Using these versions is also
-optional but can reduce unexpectedly inconsistent behavior across different
-machines.
+We have also pinned a specific version of [Node.js](https://nodejs.org/) in the
+`package.json` file. This relies on the JavaScript Tool Manager
+[Volta](https://volta.sh/). Using Volta and these versions is optional but can
+reduce unexpectedly inconsistent behavior across different machines.
 
 ## Scripts
 
 ### Building an Extension
 
 ```
-yarn build
+npm run build
 ```
 
 ### Run Tests
 
 ```
-yarn test
+npm run test
 ```
 
 ### Check for ESLint issues
 
 ```
-yarn lint
+npm run lint
 ```
 
 ### Start Storybook
 
 ```
-yarn storybook
+npm run storybook
 ```
