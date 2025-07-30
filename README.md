@@ -1,8 +1,10 @@
 # HELIO Extension Template
 
 This is the template repository for building [HELIO](https://helio-hmi.com/)
-extensions using the HELIO SDK. It provides a basic setup and includes all
-necessary tools for easy development. These include:
+extensions using the
+[HELIO SDK](https://www.npmjs.com/package/@hmiproject/helio-sdk).
+It provides a basic setup and includes all necessary tools for easy
+development. These include:
 
 - [Rollup](https://rollupjs.org/) for building
 the extension,
