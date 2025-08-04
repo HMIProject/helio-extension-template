@@ -35,7 +35,7 @@
     "rollup-plugin-external-globals": "^0.13.0",
     "rollup-plugin-typescript2": "^0.36.0",
     "storybook": "^9.0.12",
-    "typescript": "^5.8.3",
+    "typescript": "^5.9.2",
     "typescript-eslint": "^8.38.0",
     "vitest": "^3.2.4"
   },
