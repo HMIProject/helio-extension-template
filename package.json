@@ -29,8 +29,6 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "globals": "^16.4.0",
     "prettier": "^3.6.2",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.0",
     "rollup": "4.46.1",
     "rollup-plugin-external-globals": "^0.13.0",
     "rollup-plugin-typescript2": "^0.36.0",
