@@ -24,7 +24,7 @@
     "@storybook/react-vite": "^9.1.10",
     "@types/react": "^19.1.15",
     "@types/react-dom": "^19.1.9",
-    "eslint": "^9.36.0",
+    "eslint": "^9.37.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^6.1.1",
     "globals": "^16.4.0",
