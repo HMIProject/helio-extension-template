@@ -6,5 +6,7 @@ export default createLibraryExtension({
   version: '1.0.0',
   author: 'ACME Inc.',
 
+  minimumRequiredHelioVersion: '25.4.0',
+
   elements: [],
 });
