@@ -1,5 +1,14 @@
 import { createLibraryExtension } from '@hmiproject/helio-sdk';
 
+/**
+ * First Steps:
+ *
+ * 1. Set the package's name in `package.json`.
+ * 2. Define your namespace in `src/namespace.ts.
+ * 3. Change the `name`, `description` and `author` fields of `createLibraryExtension`.
+ * 4. Try building with `npm run build`.
+ */
+
 export default createLibraryExtension({
   name: 'My HELIO Extension',
   description: 'Controls to extend the HELIO Library',
@@ -8,5 +17,22 @@ export default createLibraryExtension({
 
   minimumRequiredHelioVersion: '25.4.0',
 
-  elements: [],
+  actions: [
+    // Examples:
+    // Uncomment these lines and import to include the example actions in the extension:
+    //
+    // basicAction,
+    // configurableAction,
+  ],
+
+  elements: [
+    // Examples:
+    // Uncomment these lines and import to include the example elements in the extension:
+    //
+    // pageElement,
+    // widgetElement,
+    // controlElement,
+    // elementWithAction,
+    // elementWithMigration,
+  ],
 });
