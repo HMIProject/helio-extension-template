@@ -34,7 +34,6 @@ export default {
       'react/jsx-runtime': '$',
       '@hmiproject/helio-sdk': 'HELIO.v1',
       react: 'React',
-      zod: 'zod',
     }),
   ],
 };
