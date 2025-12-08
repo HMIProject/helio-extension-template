@@ -11,7 +11,7 @@ export const elementWithAction = createElement(namespace, {
   traits: [traits.Control],
 
   propsSchema: createPropsSchema().initial({
-    onClick: props.Action({ label: 'On Click', optional: true }),
+    onClick: props.Action({ label: 'On click', optional: true }),
   }),
 
   Component(props) {
