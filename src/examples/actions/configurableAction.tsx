@@ -12,7 +12,6 @@ import { namespace } from '../../namespace';
 export const configurableAction = createAction(namespace, {
   name: 'Configurable Action',
   description: 'Performs custom logic',
-  icon: { name: 'Runner' },
 
   propsSchema: createPropsSchema().initial({
     value: props.DynamicProperty({

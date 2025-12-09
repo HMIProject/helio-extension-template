@@ -14,6 +14,7 @@ import { namespace } from '../../namespace';
 export const elementWithMigration = createElement(namespace, {
   name: 'Element with Migration',
   description: 'An element that showcases built-in migration support',
+
   traits: [traits.Control],
 
   // The `propsSchema` defines the props on your element that can be edited
@@ -24,8 +25,12 @@ export const elementWithMigration = createElement(namespace, {
     //
     // Defines the initial version of the schema.
     .initial({
-      // Initially, this element had a prop called `valueA`,
-      value: props.String({ label: 'Value', optional: false, defaultValue: 'Default Value' }),
+      // Initially, this element had a prop called `status`,
+      status: props.String({
+        label: 'Status',
+        optional: false,
+        defaultValue: 'Default Value',
+      }),
 
       // …and a `count` prop that was a simple number.
       count: props.Number({ label: 'Count', optional: false, defaultValue: 0 }),
@@ -36,8 +41,12 @@ export const elementWithMigration = createElement(namespace, {
     // New prop versions can be introduced by calling `.migrate()` on the latest schema.
     .migrate(
       {
-        // The new version renames the `value` prop to `itemValue`
-        itemValue: props.String({ label: 'Value', optional: false, defaultValue: 'Default Value' }),
+        // The new version renames the `status` prop to `statusMessage`
+        statusMessage: props.String({
+          label: 'Status message',
+          optional: false,
+          defaultValue: 'Default Value',
+        }),
 
         // The `count` prop remains unchanged in this version.
         count: props.Number({ label: 'Count', optional: false, defaultValue: 0 }),
@@ -50,7 +59,7 @@ export const elementWithMigration = createElement(namespace, {
       (prevProps) => {
         return {
           // Copy the old `value` prop to the new `itemValue` prop.
-          itemValue: prevProps.value,
+          statusMessage: prevProps.status,
 
           // Pass the `count` prop along unchanged.
           count: prevProps.count,
@@ -63,8 +72,12 @@ export const elementWithMigration = createElement(namespace, {
     // Migrations can be chained indefinitely as new requirements are added.
     .migrate(
       {
-        // The `itemValue` prop remains unchanged in this version.
-        itemValue: props.String({ label: 'Value', optional: false, defaultValue: 'Default Value' }),
+        // The `statusMessage` prop remains unchanged in this version.
+        statusMessage: props.String({
+          label: 'Status message',
+          optional: false,
+          defaultValue: 'Default Value',
+        }),
 
         // The `count` prop is changed to be a dynamic property instead of a
         // simple number.
@@ -86,8 +99,8 @@ export const elementWithMigration = createElement(namespace, {
       // migration functions will run, one after another.
       (prevProps) => {
         return {
-          // Pass the `itemValue` prop along unchanged.
-          itemValue: prevProps.itemValue,
+          // Pass the `statusMessage` prop along unchanged.
+          statusMessage: prevProps.statusMessage,
 
           // Use the previous `count` number value to instantiate a
           // `Static Value` dynamic property with its value set to `count`.
@@ -104,7 +117,7 @@ export const elementWithMigration = createElement(namespace, {
   Component(props) {
     return (
       <Fragment>
-        <div>Value: {props.itemValue}</div>
+        <div>Status message: {props.statusMessage}</div>
         <div>
           Count: <RenderDynamicProperty value={props.count} />
         </div>

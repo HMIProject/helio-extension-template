@@ -6,7 +6,7 @@ import { namespace } from '../../namespace';
 // the library extension definition in `src/main.tsx`.
 export const elementWithAction = createElement(namespace, {
   name: 'Element With Action',
-  description: '',
+  description: 'Element that uses an action',
 
   traits: [traits.Control],
 

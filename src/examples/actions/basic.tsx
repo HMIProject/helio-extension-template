@@ -6,7 +6,6 @@ import { namespace } from '../../namespace';
 export const basicAction = createAction(namespace, {
   name: 'Basic Action',
   description: 'Performs custom logic',
-  icon: { name: 'Runner' },
 
   propsSchema: createPropsSchema().initial({}),
 

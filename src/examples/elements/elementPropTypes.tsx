@@ -8,7 +8,7 @@ export const elementPropTypes = createElement(namespace, {
   name: 'Prop Type Example Element',
   description: 'An example that showcases different prop types',
 
-  traits: [traits.Widget, traits.Control, traits.Page],
+  traits: [traits.Widget],
 
   propsSchema: createPropsSchema().initial({
     booleanValue: props.Boolean({ label: 'Boolean', optional: true }),
