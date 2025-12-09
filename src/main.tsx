@@ -19,20 +19,25 @@ export default createLibraryExtension({
 
   actions: [
     // Examples:
-    // Uncomment these lines and import to include the example actions in the extension:
     //
     // basicAction,
     // configurableAction,
   ],
 
+  dynamicProperties: [
+    // Examples:
+    //
+    // basicDynamicProperty,
+  ],
+
   elements: [
     // Examples:
-    // Uncomment these lines and import to include the example elements in the extension:
     //
     // pageElement,
     // widgetElement,
     // controlElement,
     // elementWithAction,
     // elementWithMigration,
+    // elementWithCss,
   ],
 });
