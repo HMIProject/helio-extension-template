@@ -1,5 +1,7 @@
 # HELIO Extension Template
 
+![HELIO SDK](https://helio-hmi.com/media-embed/Helio-SDK-Icon.svg)
+
 This is the template repository for building [HELIO](https://helio-hmi.com/)
 extensions using the
 [HELIO SDK](https://www.npmjs.com/package/@hmiproject/helio-sdk).
