@@ -3,6 +3,7 @@ import externalGlobals from 'rollup-plugin-external-globals';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 import commonjs from '@rollup/plugin-commonjs';
+import json from '@rollup/plugin-json';
 
 // eslint-disable-next-line no-undef
 const { npm_package_name: name, npm_package_version: version } = process.env;
@@ -29,6 +30,7 @@ export default {
 
     nodeResolve({}),
     commonjs({}),
+    json({}),
     typescript({}),
     externalGlobals({
       'react/jsx-runtime': '$',
