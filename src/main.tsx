@@ -41,4 +41,11 @@ export default createLibraryExtension({
     // elementWithMigration,
     // elementWithCss,
   ],
+
+  icons: [
+    // Examples:
+    //
+    // basicIcon,
+    // sizedIcon,
+  ],
 });
