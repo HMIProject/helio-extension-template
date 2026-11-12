@@ -3,6 +3,8 @@ import externalGlobals from 'rollup-plugin-external-globals';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 import commonjs from '@rollup/plugin-commonjs';
+import json from '@rollup/plugin-json';
+import svgr from '@svgr/rollup';
 
 // eslint-disable-next-line no-undef
 const { npm_package_name: name, npm_package_version: version } = process.env;
@@ -29,6 +31,11 @@ export default {
 
     nodeResolve({}),
     commonjs({}),
+    json({}),
+    // Turns `import Icon from './Icon.svg'` into a React component, e.g. for
+    // `createIcon`. `icon: true` sets width and height to `1em`, as HELIO
+    // requires for icons.
+    svgr({ icon: true }),
     typescript({}),
     externalGlobals({
       'react/jsx-runtime': '$',
