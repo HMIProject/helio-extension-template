@@ -40,6 +40,7 @@ export default createLibraryExtension({
     // elementWithAction,
     // elementWithMigration,
     // elementWithCss,
+    // elementPropTypes,
   ],
 
   icons: [
