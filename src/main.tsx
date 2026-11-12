@@ -42,6 +42,7 @@ export default createLibraryExtension({
     // elementWithCss,
     // elementPropTypes,
     // elementWithComponent,
+    // elementWithTheme,
   ],
 
   icons: [
