@@ -41,6 +41,7 @@ export default createLibraryExtension({
     // elementWithMigration,
     // elementWithCss,
     // elementPropTypes,
+    // elementWithComponent,
   ],
 
   icons: [
